@@ -1,5 +1,5 @@
 //pages/sitemap.xml.js
-const EXTERNAL_DATA_URL = 'https://www.isepulveda.me/posts';
+const EXTERNAL_DATA_URL = 'https://isrsep.dreamhosters.com/wp-json/wp/v2/portfolio_item'';
 
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -15,7 +15,7 @@ function generateSiteMap(posts) {
        .map(({ id }) => {
          return `
        <url>
-           <loc>${`${EXTERNAL_DATA_URL}/${id}`}</loc>
+           <loc>${`https://www.isepulveda.me/${id}`}</loc>
        </url>
      `;
        })
