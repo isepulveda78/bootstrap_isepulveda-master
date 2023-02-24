@@ -1,6 +1,7 @@
 import Link from "next/link"
 
 export default function Footer(){
+    const footYear = new Date().getFullYear()
     return (
         <div className="container mt-5">
             <footer className="py-3 my-4">
@@ -8,7 +9,7 @@ export default function Footer(){
                         <li className="nav-item"><Link href="/" className="nav-link px-2 text-muted">Portfolio</Link></li>
                         <li className="nav-item"><Link href="/sideprojects" className="nav-link px-2 text-muted">Side Projects</Link></li>
                     </ul>
-                <p className="text-center text-muted">&copy; 2022 isepulveda</p>
+                <p className="text-center text-muted">&copy; {footYear} isepulveda | Made with WordPress & React</p>
             </footer>
        </div>
     )
