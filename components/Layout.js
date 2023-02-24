@@ -7,6 +7,7 @@ export default function Layout({ title, children, keywords, description }) {
             <meta name="keywords" content={keywords} />
             <meta name="description"  content={description} />
             <meta name="google-site-verification" content="yyYlLEoaO9AolgBQsDRzolh83aoeNvfNVBmYYoQSaNQ" />
+            <link rel="icon" href='favicon.ico'></link>
         </Head>
         <main>
             <div className="container">
