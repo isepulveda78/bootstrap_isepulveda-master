@@ -1,5 +1,3 @@
-import { getPortfolio } from "wordpress/wordpress-apis"
-//pages/sitemap.xml.js
 const EXTERNAL_DATA_URL = 'https://isrsep.dreamhosters.com/wp-json/wp/v2/portfolio_item';
 
 function generateSiteMap(posts) {
@@ -13,10 +11,10 @@ function generateSiteMap(posts) {
        <loc>https://www.isepulveda.me/sideprojects</loc>
      </url>
      ${posts
-       .map(({ post }) => {
+       .map(({ id }) => {
          return `
        <url>
-           <loc>${`https://www.isepulveda.me/${post}`}</loc>
+           <loc>${`https://www.isepulveda.me/${id}`}</loc>
        </url>
      `;
        })
