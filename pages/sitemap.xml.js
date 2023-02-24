@@ -1,5 +1,5 @@
 //pages/sitemap.xml.js
-const EXTERNAL_DATA_URL = 'https://jsonplaceholder.typicode.com/posts';
+const EXTERNAL_DATA_URL = 'https://www.isepulveda.me/posts';
 
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
