@@ -14,7 +14,7 @@ function generateSiteMap(posts) {
        .map(({ id }) => {
          return `
        <url>
-           <loc>${`${EXTERNAL_DATA_URL}/${id}`}</loc>
+           <loc>${`https://www.isepulveda.me/${id}`}</loc>
        </url>
      `;
        })
