@@ -1,6 +1,6 @@
 import { getPortfolio } from "wordpress/wordpress-apis";
 
-function generateSiteMap(posts) {
+function generateSiteMap(sitemap) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!--We manually set the two URLs we know already-->
@@ -10,11 +10,11 @@ function generateSiteMap(posts) {
      <url>
        <loc>https://www.isepulveda.me/sideprojects</loc>
      </url>
-     ${posts
-       .map(({ id }) => {
+     ${sitemap
+       .map(({ post }) => {
          return `
        <url>
-           <loc>${`https://www.isepulveda.me/${id}`}</loc>
+           <loc>${`https://www.isepulveda.me/${post.title.rendered}`}</loc>
        </url>
      `;
        })
@@ -40,7 +40,9 @@ export async function getServerSideProps({ res }) {
   res.end();
 
   return {
-    props: {},
+    props: {
+        sitemap
+    },
   };
 }
 
