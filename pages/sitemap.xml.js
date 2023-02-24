@@ -1,4 +1,5 @@
-import { getPortfolio } from "wordpress/wordpress-apis"
+//pages/sitemap.xml.js
+const EXTERNAL_DATA_URL = 'https://www.isepulveda.me/';
 
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -14,7 +15,7 @@ function generateSiteMap(posts) {
        .map(({ id }) => {
          return `
        <url>
-           <loc>${`https://www.isepulveda.me/${id.title.rendered}`}</loc>
+           <loc>${`${EXTERNAL_DATA_URL}/${id}`}</loc>
        </url>
      `;
        })
@@ -29,7 +30,9 @@ function SiteMap() {
 
 export async function getServerSideProps({ res }) {
   // We make an API call to gather the URLs for our site
-  const posts = await fetch(getPortfolio);
+  const request = await fetch(EXTERNAL_DATA_URL);
+  const posts = await request.json();
+
   // We generate the XML sitemap with the posts data
   const sitemap = generateSiteMap(posts);
 
@@ -39,9 +42,7 @@ export async function getServerSideProps({ res }) {
   res.end();
 
   return {
-    props: {
-        posts
-    },
+    props: {},
   };
 }
 
