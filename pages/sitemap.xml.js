@@ -1,5 +1,5 @@
 //pages/sitemap.xml.js
-const EXTERNAL_DATA_URL = 'https://isrsep.dreamhosters.com/wp-json/wp/v2/portfolio_item'';
+const EXTERNAL_DATA_URL = 'https://isrsep.dreamhosters.com/wp-json/wp/v2/portfolio_item';
 
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
