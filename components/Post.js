@@ -23,8 +23,6 @@ export default function Post({post}){
                                 { getText(post.acf.description)}
                            </div>
                         }
-                    
-                    
             </div>
          </div>
     )
