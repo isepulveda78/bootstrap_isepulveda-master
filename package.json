@@ -22,6 +22,7 @@
     "sanitize-html-react": "^1.13.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "sass": "^1.57.1"
   }
 }

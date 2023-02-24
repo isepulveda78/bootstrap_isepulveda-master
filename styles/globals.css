@@ -3,10 +3,6 @@
 
 body {
     font-family: 'Roboto', sans-serif !important;
-    background-image: url('/img/palmtree.svg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
 }
 .container{
     max-width: 960px !important;
