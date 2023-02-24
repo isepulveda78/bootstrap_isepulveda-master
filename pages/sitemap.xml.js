@@ -11,10 +11,10 @@ function generateSiteMap(posts) {
        <loc>https://www.isepulveda.me/sideprojects</loc>
      </url>
      ${posts
-       .map(({ id }) => {
+       .map(({ slug }) => {
          return `
        <url>
-           <loc>${`https://www.isepulveda.me/${id}`}</loc>
+           <loc>${`https://www.isepulveda.me/${slug}`}</loc>
        </url>
      `;
        })
