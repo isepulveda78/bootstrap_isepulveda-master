@@ -1,12 +1,9 @@
 import Link from "next/link"
 import Moment from 'react-moment'
 import Image from "next/image"
+import sanitizeHtml from "sanitize-html-react"
 
 export default function Post({post}){
-    const getText = (html) => {
-        const doc = new DOMParser().parseFromString(html, "text/html")
-        return doc.body.textContent
-    }
     return (
         <div className="row mt-5">
             <div className="col-md-4">
@@ -19,9 +16,7 @@ export default function Post({post}){
                             <Image src={post.thumbnail} width={1366} height={625} alt={post.title.rendered} className="card-img-top img-fluid rounded-3 shadow-lg" />
                         </Link>
                         { post.acf.description &&
-                            <div className="mt-2">
-                                { getText(post.acf.description)}
-                           </div>
+                            <div className="mt-2" dangerouslySetInnerHTML={{__html: sanitizeHtml( post.acf.description )}}></div>
                         }
             </div>
          </div>

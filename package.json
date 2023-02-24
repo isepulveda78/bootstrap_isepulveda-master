@@ -18,7 +18,8 @@
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-moment": "^1.1.3"
+    "react-moment": "^1.1.3",
+    "sanitize-html-react": "^1.13.0"
   },
   "devDependencies": {
     "sass": "^1.57.1"
