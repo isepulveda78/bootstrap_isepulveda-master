@@ -13,7 +13,7 @@ export default function Home({posts}) {
   return (
     <>
      <NavBar />
-      <Layout>
+      <Layout title="isepulveda" keywords="Israel Sepulveda's Web Portfolio" description="Web Applications built by Israel Sepulveda">
           <Hero header="Portfolio" description="These are some of the work that I have done over the years." />
             { posts.length === 0 && <h3>No Posts</h3> }
             { jsxPosts }
