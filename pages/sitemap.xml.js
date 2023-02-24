@@ -14,7 +14,7 @@ function generateSiteMap(posts) {
        .map(({ slug }) => {
          return `
        <url>
-           <loc>${`https://www.isepulveda.me/${slug}`}</loc>
+           <loc>${`https://www.isepulveda.me/#${slug}`}</loc>
        </url>
      `;
        })
