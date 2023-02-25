@@ -2,7 +2,7 @@ import Head from "next/head"
 export default function Layout({ title, children, keywords, description }) {
 
     const background = {
-        backgroundImage: "url('./img/palmtree.svg')",
+        backgroundImage: "url('./img/palmtree.png')",
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
         backgroundSize: '100%',

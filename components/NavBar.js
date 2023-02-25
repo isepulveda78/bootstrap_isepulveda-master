@@ -4,7 +4,7 @@ export default function NavBar(){
     return (
         <>
         <nav className="navbar navbar-expand-lg bg-transparent">
-            <div className="container">
+            <div className="container bg-transparent">
                 <div className="navbar-brand"><Link className="pacifico fs-2 ms-2 text-decoration-none text-dark" href="/"><Image src="/img/isepulveda.png" className="img-fluid" width={100} height={100} alt="isepulveda"></Image>{" "}isepulveda</Link></div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
