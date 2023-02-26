@@ -1,13 +1,6 @@
 import Head from "next/head"
 export default function Layout({ title, children, keywords, description }) {
 
-    const background = {
-        backgroundImage: "url('https://isrsep.dreamhosters.com/wp-content/uploads/2023/02/palmTree.svg')",
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        backgroundSize: '100%',
-        zIndex: '99999'
-    }
     return (
         <>
         <Head>
@@ -17,7 +10,7 @@ export default function Layout({ title, children, keywords, description }) {
             <meta name="google-site-verification" content="yyYlLEoaO9AolgBQsDRzolh83aoeNvfNVBmYYoQSaNQ" />
             <link rel="icon" href='favicon.ico'></link>
         </Head>
-        <main style={background}>
+        <main>
             <div className="container">
                 {children}
             </div>
