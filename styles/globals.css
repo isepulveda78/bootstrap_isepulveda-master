@@ -3,11 +3,10 @@
 
 body {
     font-family: 'Roboto', sans-serif !important;
-    background-image: "url('https://isrsep.dreamhosters.com/wp-content/uploads/2023/02/palmTree.svg')";
-    background-repeat: 'no-repeat';
-    background-attachment: 'fixed';
-    background-size: '100%';
-    z-index: '99999';
+    background-image: url('https://isrsep.dreamhosters.com/wp-content/uploads/2023/02/palmTree.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .container{
     max-width: 960px !important;
